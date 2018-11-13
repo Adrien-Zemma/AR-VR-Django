@@ -29,6 +29,6 @@ class Polls(models.Model):
 		}
 
 	def __str__(self):
-		return "it's " + self.topics + " on case " + self.numero_case
+		return "it's " + self.topics + " on case " + str(self.numero_case)
 	class Meta:
         	verbose_name_plural = 'polls'

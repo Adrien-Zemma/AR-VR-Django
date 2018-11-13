@@ -12,7 +12,7 @@ for service in [
 	]:
 	for widget in service.widgets:
 		router.register(widget["api"]["api_route"], widget["api"]["ViewSet"])
-router.register('users', UserViewSet)
+router.register('users', UserViewSet,)
 
 
 urlpatterns = [
