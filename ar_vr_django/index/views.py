@@ -20,7 +20,6 @@ class Index(View):
 						"template_name": widget["template_name"],
 						"data": w.get(w),
 					})
-		print(widgets)
 		return render(request, 'index.html', {
 			'widgets': widgets,
 		})

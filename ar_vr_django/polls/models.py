@@ -21,6 +21,8 @@ class Polls(models.Model):
 	
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
 
+	username =  models.CharField(max_length = 55, default = "")
+
 	def get(self, instance):
 		return {
 			"num" : self.numero_case,

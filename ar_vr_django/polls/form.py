@@ -5,5 +5,5 @@ from .models import Polls
 class PollsForm(ModelForm):
 	class Meta:
 		model = Polls
-		exclude = ['user']
+		exclude = ['user', 'username']
 		
